@@ -1,0 +1,16 @@
+nav {
+	display: flex;
+	padding: 1.5rem;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10rem;
+}
+.routes {
+	display: flex;
+	gap: 5rem;
+}
+
+.logo {
+	background-color: var(--secondary);
+	height: 40px;
+}
