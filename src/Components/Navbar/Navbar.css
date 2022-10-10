@@ -1,9 +1,8 @@
 nav {
 	display: flex;
-	padding: 1.5rem;
-	justify-content: space-around;
+	padding: 2rem 1.5rem;
+	justify-content: space-between;
 	align-items: center;
-	gap: 10rem;
 }
 .routes {
 	display: flex;
