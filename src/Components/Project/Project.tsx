@@ -1,6 +1,7 @@
 import './Project.css'
 import githubIcon from '../../assets/icons/github.svg';
 import playIcon from '../../assets/icons/play.svg';
+import projectDemo from '../../assets/images/Bookademy.png';
 type ProjectProps = {
     isFeaturedProject?: boolean,
     projectTitle: String,
@@ -35,7 +36,7 @@ export default function Project(props:ProjectProps){
                 </div>
                 
             </div>
-            <img src="" alt="Project" className="project-img" />
+            <img src={projectDemo} alt="Project" className="project-img" />
             
         </div>
     );
