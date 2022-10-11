@@ -8,7 +8,7 @@ import myImage from '../../assets/images/myImage.png'
 export default function Hero(){
 
     const handleSpinnerClick = () =>{
-        console.log('lol');
+        
     };
     
     return(
@@ -36,7 +36,7 @@ export default function Hero(){
             </div>
             
 
-            <div className="spinner-cont" onClick={handleSpinnerClick}><div className="spinner" ></div></div>
+            
         </div>
     )
 }
