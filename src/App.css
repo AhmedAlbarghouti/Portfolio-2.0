@@ -32,7 +32,7 @@ a {
 	align-self: center;
 }
 
-.main-Btn {
+.main-btn {
 	background: var(--third);
 	/* border: 1px solid black; */
 	border: none;
@@ -44,7 +44,7 @@ a {
 	cursor: pointer;
 }
 
-.main-Btn:hover {
+.main-btn:hover {
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 

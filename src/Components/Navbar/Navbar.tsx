@@ -10,7 +10,7 @@ export default function Navbar(){
                 <a href="">About</a>
                 <a href="">Projects</a>
                 <a href="">Contact</a>
-                <button className='main-Btn'>Resume</button>
+                <button className='main-btn'>Resume</button>
             </div>
         </nav>
     )

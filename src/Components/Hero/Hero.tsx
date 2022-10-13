@@ -23,7 +23,7 @@ export default function Hero(){
                         <p>Ottawa, Canada</p>
                     </div>
 
-                    <div className="social"></div>
+                    
                     <a href="https://github.com/AhmedAlbarghouti"><img src={githubIcon} alt="Github" /></a>
                     <a href="https://www.linkedin.com/in/ahmedalba/"><img src={linkedinIcon} alt="LinkedIn" /></a>
                     <a href="https://twitter.com/ahmed_barghou"><img src={twitterIcon} alt="Twitter" /></a>

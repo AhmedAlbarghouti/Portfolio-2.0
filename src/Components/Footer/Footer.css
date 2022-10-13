@@ -1,0 +1,47 @@
+.Footer {
+	border-top: 3px solid var(--fourth);
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-left {
+	width: 400px;
+}
+
+.footer-left p {
+	font-weight: 300;
+}
+
+.footer-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.footer-right button {
+	width: 150px;
+}
+
+.footer-right .routes {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	justify-content: flex-end;
+	align-self: flex-end;
+}
+
+.footer-bottom {
+	text-align: center;
+}
+
+.footer-name {
+	font-weight: bold;
+	text-decoration: underline;
+}
