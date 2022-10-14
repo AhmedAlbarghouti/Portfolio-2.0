@@ -28,11 +28,16 @@ body {
 }
 
 a {
-	text-decoration: none;
 	color: var(--secondary);
 	font-size: 1.8rem;
 	font-weight: bold;
 	align-self: center;
+	text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
+}
+
+a:hover {
+	text-decoration: underline 0.15em var(--third);
 }
 
 .main-btn {
@@ -40,16 +45,18 @@ a {
 	/* border: 1px solid black; */
 	border: none;
 	padding: 0.6rem 2rem;
+	text-align: center;
 	margin: 0;
 	color: var(--secondary);
 	font-size: 1.25rem;
 	border-radius: 3px;
 	filter: drop-shadow(4px 4px 0px var(--secondary));
+
 	cursor: pointer;
 }
 
 .main-btn:hover {
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	animation: box-shadow-grow 5s;
 }
 
 .section-header {
