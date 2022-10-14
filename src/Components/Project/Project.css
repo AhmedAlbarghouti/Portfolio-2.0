@@ -4,6 +4,7 @@
 	justify-content: space-between;
 	margin: 0 0 5rem 0;
 	padding: 1rem;
+	animation: 0.8s slide-up;
 }
 
 .project-info {

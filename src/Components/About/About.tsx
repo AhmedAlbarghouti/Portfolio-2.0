@@ -4,7 +4,7 @@ import '../../App.css'
 export default function About (){
     return(
         <div className="About">
-            <h1>About Me</h1>
+            <h1 className='page-header'>About Me</h1>
 
             <h2>2021</h2>
             <h3>April</h3>

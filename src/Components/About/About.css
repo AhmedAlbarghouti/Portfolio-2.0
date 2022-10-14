@@ -1,3 +1,5 @@
 .About {
 	padding: 1rem;
+	animation: 0.8s slide-up;
+	flex: 80%;
 }

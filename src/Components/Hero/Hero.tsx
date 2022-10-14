@@ -34,7 +34,7 @@ export default function Hero(){
                 <img className="hero-img" src={myImage} alt="Ahmed" />
             </div>
             </div>
-            
+            <div className="spinner-cont" onClick={handleSpinnerClick}><div className="spinner" ></div></div>
 
             
         </div>

@@ -13,28 +13,24 @@
 
 body {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
+	height: 100vh;
 	background: var(--main);
 	color: var(--secondary);
 }
 
 .App {
-	width: 1300px;
+	max-width: 1350px;
+	margin: 0 auto;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	font-family: "Merriweather", sans-serif;
 }
 
 a {
 	text-decoration: none;
 	color: var(--secondary);
-	font-size: 1.25rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 	align-self: center;
 }
@@ -58,5 +54,20 @@ a {
 
 .section-header {
 	padding: 0 1rem;
-	font-size: 2rem;
+	font-size: 3rem;
+}
+
+.page-header {
+	font-size: 5rem;
+}
+
+@keyframes slide-up {
+	0% {
+		bottom: -60px;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0;
+		opacity: 1;
+	}
 }
