@@ -1,5 +1,6 @@
-import './Footer.css'
-
+import './Footer.css';
+import pdf from '../../assets/resume.pdf';
+import { Link } from 'react-router-dom';
 export default function Footer() {
     return(
         <div className="Footer">
@@ -10,11 +11,11 @@ export default function Footer() {
 
                 </div>
                 <div className="footer-right">
-                <button className='main-btn'>Resume</button>
+                
                 <div className="routes">
-                    <a href="">About</a>
-                    <a href="">Projects</a>
-                    <a href="">Contact</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <button className='main-btn'><a href={pdf} target="_blank" >Resume</a></button>
                    
             </div>
                     

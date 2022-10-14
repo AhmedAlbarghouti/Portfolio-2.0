@@ -1,16 +1,19 @@
 import React from 'react';
 import './Navbar.css'
+import {Link} from 'react-router-dom';
+import pdf from '../../assets/resume.pdf'
 
 export default function Navbar(){
     return(
         <nav>
-            <img src="" alt="logo" className='logo' />
+            <Link to='/' >Ahmed Albarghouti</Link>
+            
 
             <div className="routes">
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
-                <button className='main-btn'>Resume</button>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <button className='main-btn'><a href={pdf} target="_blank" >Resume</a></button>
+                
             </div>
         </nav>
     )

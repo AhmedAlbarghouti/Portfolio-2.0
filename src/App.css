@@ -7,21 +7,28 @@
 	--fourth: #242629;
 	--fifth: #94a1b2;
 }
+::-webkit-scrollbar {
+	display: none;
+}
 
 body {
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+
+	background: var(--main);
+	color: var(--secondary);
 }
 
 .App {
 	width: 1300px;
-}
-body {
-	width: 100%;
-
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	font-family: "Merriweather", sans-serif;
-	background: var(--main);
-	color: var(--secondary);
 }
 
 a {
@@ -37,6 +44,7 @@ a {
 	/* border: 1px solid black; */
 	border: none;
 	padding: 0.6rem 2rem;
+	margin: 0;
 	color: var(--secondary);
 	font-size: 1.25rem;
 	border-radius: 3px;
@@ -49,5 +57,6 @@ a {
 }
 
 .section-header {
+	padding: 0 1rem;
 	font-size: 2rem;
 }
