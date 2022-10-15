@@ -7,7 +7,7 @@
 	position: relative;
 	transform: translateY(50px);
 	opacity: 0;
-	transition: 2s all ease;
+	transition: 1s all ease;
 	gap: 4rem;
 }
 
@@ -18,9 +18,11 @@
 .project-info {
 	flex-basis: 60%;
 	background: var(--fourth);
-	border-radius: 2px;
+	border-radius: 5px;
 	width: 500px;
 	padding: 2.2rem 2rem;
+	display: flex;
+	flex-direction: column;
 }
 .project-featured {
 	display: inline;
@@ -37,7 +39,7 @@
 }
 .project-header {
 	display: flex;
-
+	flex-basis: 10%;
 	justify-content: space-between;
 }
 
@@ -52,6 +54,7 @@
 }
 
 .project-desc {
+	flex-basis: 70%;
 	color: var(--fifth);
 	letter-spacing: 0.05rem;
 	line-height: 2.2rem;
@@ -87,6 +90,7 @@
 }
 
 .project-img {
-	border-radius: 2px;
+	border-radius: 5px;
+	border: 1px solid var(--fourth);
 	width: 500px;
 }
