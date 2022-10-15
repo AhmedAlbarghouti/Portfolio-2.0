@@ -1,27 +1,61 @@
 import './Contact.css'
-import clipboard from '../../assets/icons/clipboard.svg'
+import clipboardImg from '../../assets/icons/clipboard.svg'
 import githubIcon from '../../assets/icons/github.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
-import twitterIcon from '../../assets/icons/twitter.svg';
-export default function Contact() {
+import emailjs from '@emailjs/browser';
+import { FormEvent, useRef } from 'react';
 
-    function handleClipboardClick (e:  React.FormEvent<EventTarget>){
-        
+
+
+export default function Contact() {
+    const form = useRef<HTMLFormElement>(null)
+    const succussMsg = useRef<HTMLParagraphElement>(null) ;
+
+    const serviceID:string  = process.env.REACT_APP_SERVICE_ID ?? '';
+    const templateID:string  = process.env.REACT_APP_TEMPLATE_ID ?? '';
+    const userID:string  = process.env.REACT_APP_USER_ID ?? '';
+
+    const handleEmailCopy = () =>{
+        navigator.clipboard.writeText('ahmedalbarghou@gmail.com')
     }
+
+    const handleNumberCopy = () =>{
+        navigator.clipboard.writeText('343-996-8924')
+    }
+
+
+
+    const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+
+        const currentForm = form.current;
+        const currentSuccessMsg = succussMsg.current;
+        if (currentForm == null) return;
+        emailjs.sendForm(serviceID,templateID,currentForm,userID)
+        .then((result) => {
+            
+            currentSuccessMsg!.style.opacity = "1";
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+   }
+   
+   
     return(
         <div className='Contact'>
             <div className="contact-left">
                 <h2 className="section-header">Stay In Touch</h2>
-                <form action="" method="post">
+                <form onSubmit={handleOnSubmit} ref={form}>
                     <label htmlFor="nameInput">Name</label>
-                    <input required placeholder='Your name' type="text" name='Name' id="nameInput" />
+                    <input required placeholder='Your name' type="text" name='name' title='Please enter your name'/>
 
                     <label htmlFor="emailInput">Email</label>
-                    <input required  placeholder='you@example.com' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" name="Email" id="emailInput" />
+                    <input required  placeholder='you@example.com' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" name="email" title='Please enter a valid email'  />
 
                     <label htmlFor="messageInput">Message</label>
-                    <textarea required placeholder='Your message' id="messageInput" rows={5} />
-
+                    <textarea required placeholder='Your message'  rows={5} name="message" title='Please enter your message' />
+                    <p ref={succussMsg} className='form-succuss-msg'>Success! message sent to Ahmed!</p>
                     <button className='main-btn' type="submit">Submit</button>
                 </form>
 
@@ -33,13 +67,13 @@ export default function Contact() {
                     <h3 className="contact-info-label">Email</h3>
                     <div className="contact-info">
                         <p className="contact-info-value">ahmedalbarghou@gmail.com</p>
-                        <img onClick={handleClipboardClick} className='clipboard' src={clipboard} alt="clipboard" />
+                        <img className='clipboard' src={clipboardImg} alt="clipboard" onClick={handleEmailCopy} />
                     </div>
 
                     <h3 className="contact-info-label">Phone Number</h3>
                     <div className="contact-info">
                         <p className="contact-info-value">343-996-8924</p>
-                        <img className='clipboard' src={clipboard} alt="clipboard" />
+                        <img className='clipboard' src={clipboardImg} alt="clipboard" onClick={handleNumberCopy} />
                     </div>
 
                     

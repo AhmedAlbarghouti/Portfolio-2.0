@@ -15,7 +15,7 @@ export default function Project(props:ProjectProps){
     const reveal = () => {
         
         var project = document.getElementsByClassName("Project")
-        console.log(project);
+        
         for (var i = 0; i < project.length; i++) {
             var windowHeight = window.innerHeight;
             var elementTop = project[i].getBoundingClientRect().top;
