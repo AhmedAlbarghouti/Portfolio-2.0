@@ -68,6 +68,10 @@ a:hover {
 	font-size: 5rem;
 }
 
+.social-icon {
+	height: 2.2rem;
+}
+
 @keyframes slide-up {
 	0% {
 		bottom: -60px;

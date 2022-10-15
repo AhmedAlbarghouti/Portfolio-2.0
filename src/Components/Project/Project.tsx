@@ -1,7 +1,9 @@
 import './Project.css'
+import { useRef, useEffect, DetailedHTMLProps } from "react";
 import githubIcon from '../../assets/icons/github.svg';
 import playIcon from '../../assets/icons/play.svg';
 import projectDemo from '../../assets/images/Bookademy.png';
+import React from 'react';
 type ProjectProps = {
     isFeaturedProject?: boolean,
     projectTitle: String,
@@ -11,7 +13,30 @@ type ProjectProps = {
 
 export default function Project(props:ProjectProps){
 
-   
+
+    
+   useEffect(() => {
+
+
+    const reveal = () => {
+        
+        var project = document.getElementsByClassName("Project")
+        console.log(project);
+        for (var i = 0; i < project.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = project[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                project[i].classList.add("active");
+            } else {
+                project[i].classList.remove("active");
+        }
+    }
+}
+    
+        window.addEventListener("scroll",reveal)
+        reveal();
+   },[])
 
 
     return(

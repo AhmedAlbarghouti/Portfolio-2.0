@@ -23,10 +23,12 @@ export default function Hero(){
                         <p>Ottawa, Canada</p>
                     </div>
 
-                    
-                    <a href="https://github.com/AhmedAlbarghouti"><img src={githubIcon} alt="Github" /></a>
-                    <a href="https://www.linkedin.com/in/ahmedalba/"><img src={linkedinIcon} alt="LinkedIn" /></a>
-                    <a href="https://twitter.com/ahmed_barghou"><img src={twitterIcon} alt="Twitter" /></a>
+                    <div className="social-bar">
+                        <a href="https://github.com/AhmedAlbarghouti"><img className='social-icon' src={githubIcon} alt="Github" /></a>
+                        <a href="https://www.linkedin.com/in/ahmedalba/"><img className='social-icon' src={linkedinIcon} alt="LinkedIn" /></a>
+                        
+                    </div>
+                   
                 </div>
             </div>
 
@@ -34,7 +36,7 @@ export default function Hero(){
                 <img className="hero-img" src={myImage} alt="Ahmed" />
             </div>
             </div>
-            <div className="spinner-cont" onClick={handleSpinnerClick}><div className="spinner" ></div></div>
+            
 
             
         </div>
