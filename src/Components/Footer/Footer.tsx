@@ -8,14 +8,15 @@ export default function Footer() {
                 <div className="footer-left">
                     <h2>Ahmed Albarghouti</h2>
                     <p>A full-stack developer based in Canada focusing on building beautiful and efficient web apps.</p>
-
+                    <button className='main-btn'><a href={pdf} rel="noreferrer" target="_blank"  >Resume</a></button>
                 </div>
                 <div className="footer-right">
                 
                 <div className="routes">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
-                    <button className='main-btn'><a href={pdf} rel="noreferrer" target="_blank"  >Resume</a></button>
+                    <Link to="/contact">Contact</Link>
+
                    
             </div>
                     
