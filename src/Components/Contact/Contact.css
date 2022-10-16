@@ -3,7 +3,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 1rem;
-	margin-top: 15rem;
+	animation: 0.8s slide-up;
 	margin-bottom: 5rem;
 }
 

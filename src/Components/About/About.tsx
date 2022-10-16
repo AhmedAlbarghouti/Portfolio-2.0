@@ -1,25 +1,30 @@
 
 import './About.css'
 import '../../App.css'
+import Contact from '../Contact/Contact'
+
+import programmingImg from '../../assets/icons/programming.svg';
+import { Link } from 'react-router-dom';
 export default function About (){
+    
     return(
         <div className="About">
             <h1 className='page-header'>About Me</h1>
 
-            <h2>2021</h2>
-            <h3>April</h3>
-            <p>Graduated from Algonquin College of Applied Arts and Technology in Computer Programming.</p>
-            <p>Started my internship at <b>Stemworld Educational Services</b> as an <b>Intern Software Developer</b>.</p>
+            <div className="about-left-right">
+                <div className="about-left">
+                    <h3>Hello! I'm Ahmed, a self-motivated full-stack developer with 2 years of experience building websites. </h3>
+                    <p><i> I always had an affinity for everything tech related. building my first computer, jailbreaking my iPhone and hosting my own video game servers were some of the things that helped me develop my problem solving skills while growing up.</i></p>
+                    <p>Currently, I'm interested in cloud/web-development, building efficient applications and implementing clean designs.</p>
+                    <p>The technologies I use <b>but not limited to</b> are <span className='about-tech'>React</span> , <span className="about-tech">Typescript</span> , <span className="about-tech">JavaScript(ES6+)</span> , <span className="about-tech">Next.JS</span> and <span className="about-tech">Tailwind css</span> which help me deliver quality websites.</p>
+                    <Link  to="/Contact" className='main-btn'>Let's get in touch</Link>
+                    
 
-            <h3>June</h3>
-            <p>Completed my internship.</p>
-            
-            <h3>August</h3>
-            <p>Completed The Machine Learning Pipeline on AWS by AWS.</p>
-            <p>Took part in AWS's DeepRacer (Reinforcement Learning) Event.</p>
-
-            <h3>September</h3>
-            <p>Started my full-time position as I</p>
+                </div>
+                
+                <img className='about-right' src={programmingImg} alt="Programming" />
+                
+            </div>
         </div>
     )
 }

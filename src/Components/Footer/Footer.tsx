@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="routes">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
-                    <button className='main-btn'><a href={pdf} target="_blank" >Resume</a></button>
+                    <button className='main-btn'><a href={pdf} rel="noreferrer" target="_blank"  >Resume</a></button>
                    
             </div>
                     
