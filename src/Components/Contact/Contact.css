@@ -91,6 +91,14 @@ textarea {
 .clipboard {
 	margin-right: 1rem;
 	cursor: pointer;
+	background-image: url("../../assets/icons/clipboard.svg");
+	width: 24px;
+	height: 24px;
+	align-self: center;
+}
+
+.clipboard:active {
+	background-image: url("../../assets/icons/check.svg");
 }
 
 .social {

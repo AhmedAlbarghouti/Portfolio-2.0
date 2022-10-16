@@ -67,13 +67,13 @@ export default function Contact() {
                     <h3 className="contact-info-label">Email</h3>
                     <div className="contact-info">
                         <p className="contact-info-value">ahmedalbarghou@gmail.com</p>
-                        <img className='clipboard' src={clipboardImg} alt="clipboard" onClick={handleEmailCopy} />
+                        <div className='clipboard' onClick={handleEmailCopy} />
                     </div>
 
                     <h3 className="contact-info-label">Phone Number</h3>
                     <div className="contact-info">
                         <p className="contact-info-value">343-996-8924</p>
-                        <img className='clipboard' src={clipboardImg} alt="clipboard" onClick={handleNumberCopy} />
+                        <div className='clipboard'  onClick={handleNumberCopy} />
                     </div>
 
                     
