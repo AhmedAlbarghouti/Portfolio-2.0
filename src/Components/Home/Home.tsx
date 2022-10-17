@@ -19,7 +19,7 @@ export default function Home (){
 
 
         {projects.map( (p) =>{
-           return <Project projectTitle={p.projectTitle} isFeaturedProject={p.projectFeatured} projectDesc={p.projectDesc} projectTags={p.projectTags} projectGithub={p.projectGithub} projectLive={p.projectLive} projectImgFileName={p.projectImgFileName} />
+           return <Project key={p.projectID} projectID={p.projectID} projectTitle={p.projectTitle} isFeaturedProject={p.projectFeatured} projectDesc={p.projectDesc} projectTags={p.projectTags} projectGithub={p.projectGithub} projectLive={p.projectLive} projectImgFileName={p.projectImgFileName} />
         })}
         </div>
         

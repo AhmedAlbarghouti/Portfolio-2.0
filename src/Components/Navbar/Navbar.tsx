@@ -13,7 +13,7 @@ export default function Navbar(){
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/contact">Contact</Link>
-                <button className='main-btn'><a href={pdf} target="_blank" >Resume</a></button>
+                <button className='main-btn'><a href={pdf} rel="noreferrer" target="_blank" >Resume</a></button>
                 
             </div>
         </nav>

@@ -1,5 +1,4 @@
 import './Contact.css'
-import clipboardImg from '../../assets/icons/clipboard.svg'
 import githubIcon from '../../assets/icons/github.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
 import emailjs from '@emailjs/browser';
@@ -46,7 +45,7 @@ export default function Contact() {
         <div className='Contact'>
             <div className="contact-left">
                 <h2 className="section-header">Stay In Touch</h2>
-                <form onSubmit={handleOnSubmit} ref={form}>
+                <form className='contact-form' onSubmit={handleOnSubmit} ref={form}>
                     <label htmlFor="nameInput">Name</label>
                     <input required placeholder='Your name' type="text" name='name' title='Please enter your name'/>
 
@@ -55,8 +54,8 @@ export default function Contact() {
 
                     <label htmlFor="messageInput">Message</label>
                     <textarea required placeholder='Your message'  rows={5} name="message" title='Please enter your message' />
-                    <p ref={succussMsg} className='form-succuss-msg'>Success! message sent to Ahmed!</p>
                     <button className='main-btn' type="submit">Submit</button>
+                    <p ref={succussMsg} className='form-succuss-msg'>Success! message sent to Ahmed!</p>
                 </form>
 
             </div>

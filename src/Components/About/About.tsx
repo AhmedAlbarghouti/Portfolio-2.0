@@ -1,7 +1,6 @@
 
 import './About.css'
 import '../../App.css'
-import Contact from '../Contact/Contact'
 
 import programmingImg from '../../assets/icons/programming.svg';
 import { Link } from 'react-router-dom';

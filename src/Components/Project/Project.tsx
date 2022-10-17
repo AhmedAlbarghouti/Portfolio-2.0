@@ -1,8 +1,7 @@
 import './Project.css'
-import { useRef, useEffect, DetailedHTMLProps } from "react";
+import { useEffect} from "react";
 import githubIcon from '../../assets/icons/github.svg';
 import playIcon from '../../assets/icons/play.svg';
-import projectDemo from '../../assets/images/Bookademy.png';
 import ProjectProps from '../../interface/project';
 
 export default function Project(props:ProjectProps){
@@ -52,7 +51,7 @@ export default function Project(props:ProjectProps){
                 <div className="project-tags">
                     
                     {props.projectTags.map(tag =>(
-                        <div className="project-tag">{tag}</div>
+                        <div key={tag} className="project-tag">{tag}</div>
                     ))}
                 </div>
                 

@@ -1,4 +1,5 @@
 export default interface ProjectProps  {
+    projectID: string,
     isFeaturedProject?: boolean,
     projectTitle: string,
     projectDesc: string,

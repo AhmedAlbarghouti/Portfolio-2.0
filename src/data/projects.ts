@@ -1,5 +1,8 @@
+import { v4 as uuidv4 } from 'uuid'
+
 export const projects = [
 	{
+		projectID: uuidv4(),
 		projectTitle: "Weather App",
 		projectFeatured: true,
 		projectDesc:
@@ -10,6 +13,7 @@ export const projects = [
 		projectImgFileName: "weather-app.png",
 	},
 	{
+		projectID: uuidv4(),
 		projectTitle: "Etch-a-sketch",
 		projectFeatured: false,
 		projectDesc: "Something between a sketchpad and an Etch-A-Sketch. Starts off with a 16x16 grid that can be changed up to 128x128. You can change color and change from Color Mode to Random mode or Eraser.",
@@ -19,11 +23,12 @@ export const projects = [
 		projectImgFileName: "etch-a-sketch.png",
 	},
 	{
+		projectID: uuidv4(),
 		projectTitle: "Portfolio-2.0",
 		projectFeatured: false,
 		projectDesc:
-			"Version 2.0 of my portfolio. biggest changes are in design and this one is built with React.",
-		projectTags: ["HTML", "CSS", "JS", "React", "Typescript"],
+			"Remake of my portfolio. New design, using React, Typescript and EmailJS to create a working contact form with only React. I will be planning a 3.0 soon with more functionalities.",
+		projectTags: ["HTML", "CSS", "JS", "React", "Typescript","EmailJS"],
 		projectGithub: "https://github.com/AhmedAlbarghouti/Weather-app",
 		projectLive: "https://ahmed-weather-app.netlify.app/",
 		projectImgFileName: "portfolio-2.0.png",

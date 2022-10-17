@@ -3,13 +3,9 @@ import './Hero.css'
 import locationIcon from '../../assets/icons/map-pin.svg';
 import githubIcon from '../../assets/icons/github.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
-import twitterIcon from '../../assets/icons/twitter.svg';
 import myImage from '../../assets/images/myImage.png'
 export default function Hero(){
 
-    const handleSpinnerClick = () =>{
-        
-    };
     
     return(
         <div className="hero">
