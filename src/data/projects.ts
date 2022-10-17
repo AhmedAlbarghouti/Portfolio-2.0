@@ -3,8 +3,8 @@ export const projects = [
 		projectTitle: "Weather App",
 		projectFeatured: true,
 		projectDesc:
-			"Weather app that uses both openweathermap.org and unsplash apis",
-		projectTags: ["HTML", "CSS", "JS"],
+			"Fetches data from both OpenWeatherMap.org and Unsplash upon user entering a city and searching for it. then, the data shown will be of the searched city and the background will be changed to an image taken at the city from Unsplash.",
+		projectTags: ["HTML", "CSS", "JS","OpenWeatherMap.org","Unsplash"],
 		projectGithub: "https://github.com/AhmedAlbarghouti/Weather-app",
 		projectLive: "https://ahmed-weather-app.netlify.app/",
 		projectImgFileName: "weather-app.png",
@@ -12,7 +12,7 @@ export const projects = [
 	{
 		projectTitle: "Etch-a-sketch",
 		projectFeatured: false,
-		projectDesc: "Something between a sketchpad and an Etch-A-Sketch",
+		projectDesc: "Something between a sketchpad and an Etch-A-Sketch. Starts off with a 16x16 grid that can be changed up to 128x128. You can change color and change from Color Mode to Random mode or Eraser.",
 		projectTags: ["HTML", "CSS", "JS"],
 		projectGithub: "https://github.com/AhmedAlbarghouti/Etch-a-sketch",
 		projectLive: "https://ahmedalbarghouti-etch-a-sketch.netlify.app/",

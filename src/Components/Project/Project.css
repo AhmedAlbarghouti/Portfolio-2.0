@@ -1,14 +1,14 @@
 .Project {
-	min-height: 420px;
+	min-height: 380px;
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 5rem 0;
+
 	padding: 1rem;
 	position: relative;
 	transform: translateY(50px);
 	opacity: 0;
 	transition: 1s all ease;
-	gap: 4rem;
+	gap: 10rem;
 }
 
 .Project.active {
@@ -34,7 +34,6 @@
 .projects-header {
 	display: flex;
 	justify-content: space-between;
-
 	align-items: center;
 }
 .project-header {

@@ -12,12 +12,17 @@ export default function Home (){
     return(
         <div className='Home'>
         <Hero></Hero>
+
+        <div className="projects">
         <div className="projects-header"><h2 className='section-header' >Projects</h2>
         <a className='section-header' href="https://github.com/AhmedAlbarghouti">Github <img className='social-icon' src={githubIcon} alt="github" /></a></div>
-      
+
+
         {projects.map( (p) =>{
            return <Project projectTitle={p.projectTitle} isFeaturedProject={p.projectFeatured} projectDesc={p.projectDesc} projectTags={p.projectTags} projectGithub={p.projectGithub} projectLive={p.projectLive} projectImgFileName={p.projectImgFileName} />
         })}
+        </div>
+        
 
       
         <Contact></Contact>

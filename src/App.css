@@ -7,8 +7,14 @@
 	--fourth: #242629;
 	--fifth: #94a1b2;
 }
+
 ::-webkit-scrollbar {
-	display: none;
+	background-color: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--main);
+	border-radius: 3px;
 }
 
 body {
@@ -19,7 +25,7 @@ body {
 }
 
 .App {
-	max-width: 1350px;
+	width: 70%;
 	margin: 0 auto;
 	min-height: 100vh;
 	display: flex;
@@ -29,9 +35,8 @@ body {
 
 a {
 	color: var(--secondary);
-	font-size: 1.8rem;
+	font-size: 1.75rem;
 	font-weight: bold;
-	align-self: center;
 	text-decoration: underline 0.15em rgba(0, 0, 0, 0);
 	transition: text-decoration-color 300ms;
 }
@@ -42,7 +47,7 @@ a:hover {
 
 .main-btn {
 	background: var(--third);
-	/* border: 1px solid black; */
+	max-width: fit-content;
 	border: none;
 	padding: 0.6rem 2rem;
 	text-align: center;
@@ -50,13 +55,13 @@ a:hover {
 	color: var(--secondary);
 	font-size: 1.25rem;
 	border-radius: 3px;
-	filter: drop-shadow(4px 4px 0px var(--secondary));
-
 	cursor: pointer;
+	transition: all 1s;
 }
 
 .main-btn:hover {
-	animation: box-shadow-grow 5s;
+	transform: translate(4px, -4px);
+	box-shadow: -4px 4px 0 var(--secondary);
 }
 
 .section-header {
@@ -65,7 +70,10 @@ a:hover {
 }
 
 .page-header {
-	font-size: 5rem;
+	font-size: 4rem;
+
+	padding: 0;
+	margin-top: 2rem;
 }
 
 .social-icon {
