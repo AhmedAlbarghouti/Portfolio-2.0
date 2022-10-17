@@ -2,7 +2,7 @@ import './Contact.css'
 import githubIcon from '../../assets/icons/github.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
 import emailjs from '@emailjs/browser';
-import { FormEvent, MouseEventHandler, useRef } from 'react';
+import { FormEvent, useRef } from 'react';
 
 
 
