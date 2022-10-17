@@ -2,23 +2,27 @@ import './Contact.css'
 import githubIcon from '../../assets/icons/github.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
 import emailjs from '@emailjs/browser';
-import { FormEvent, useRef } from 'react';
+import { FormEvent, MouseEventHandler, useRef } from 'react';
 
 
 
 export default function Contact() {
     const form = useRef<HTMLFormElement>(null)
     const succussMsg = useRef<HTMLParagraphElement>(null) ;
-
+    
     const serviceID:string  = process.env.REACT_APP_SERVICE_ID ?? '';
     const templateID:string  = process.env.REACT_APP_TEMPLATE_ID ?? '';
     const userID:string  = process.env.REACT_APP_USER_ID ?? '';
 
-    const handleEmailCopy = () =>{
+    
+
+    const handleEmailCopy = (event: React.MouseEvent<HTMLDivElement,MouseEvent>) =>{
+        event.currentTarget.classList.add('clipboard-active');
         navigator.clipboard.writeText('ahmedalbarghou@gmail.com')
     }
 
-    const handleNumberCopy = () =>{
+    const handleNumberCopy = (event: React.MouseEvent<HTMLDivElement,MouseEvent>) =>{
+        event.currentTarget.classList.add('clipboard-active');
         navigator.clipboard.writeText('343-996-8924')
     }
 
@@ -54,7 +58,7 @@ export default function Contact() {
 
                     <label htmlFor="messageInput">Message</label>
                     <textarea required placeholder='Your message'  rows={5} name="message" title='Please enter your message' />
-                    <button className='main-btn' type="submit">Submit</button>
+                    <button className='main-btn contact-btn' type="submit">Submit</button>
                     <p ref={succussMsg} className='form-succuss-msg'>Success! message sent to Ahmed!</p>
                 </form>
 
