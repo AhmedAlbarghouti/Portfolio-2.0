@@ -6,9 +6,9 @@ on:
       - main
 
 env:
-REACT_APP_SERVICE_ID: "service_15333qn"
-REACT_APP_TEMPLATE_ID: "template_seiz7hp"
-REACT_APP_USER_ID: "oPaQ_EkKwADUiFoEu"
+REACT_APP_SERVICE_ID: service_15333qn
+REACT_APP_TEMPLATE_ID: template_seiz7hp
+REACT_APP_USER_ID: oPaQ_EkKwADUiFoEu
 
 jobs:
   build:
