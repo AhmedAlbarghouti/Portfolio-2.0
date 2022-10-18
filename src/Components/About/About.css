@@ -38,3 +38,9 @@
 .about-tech {
 	border-bottom: dotted 3.5px var(--secondary);
 }
+
+@media screen and (max-width: 1000px) {
+	.about-right {
+		display: none;
+	}
+}

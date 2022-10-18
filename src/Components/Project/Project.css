@@ -1,14 +1,14 @@
 .Project {
 	min-height: 380px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-
 	padding: 1rem;
+	gap: 10rem;
 	position: relative;
 	transform: translateY(50px);
 	opacity: 0;
 	transition: 1s all ease;
-	gap: 10rem;
 }
 
 .Project.active {
@@ -16,11 +16,10 @@
 	opacity: 1;
 }
 .project-info {
-	flex-basis: 60%;
+	flex-basis: 70%;
 	background: var(--fourth);
 	border-radius: 5px;
-	width: 500px;
-	padding: 2.2rem 2rem;
+	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -91,5 +90,24 @@
 .project-img {
 	border-radius: 5px;
 	border: 1px solid var(--fourth);
-	width: 500px;
+	max-width: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+	.Project {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	.project-info {
+		width: 90%;
+	}
+
+	.project-img {
+		display: none;
+	}
 }

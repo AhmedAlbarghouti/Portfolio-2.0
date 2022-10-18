@@ -1,10 +1,9 @@
 .Footer {
 	margin-top: 2rem;
-	border-top: 3px solid var(--fourth);
+	border-top: 3px solid var(--secondary);
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
-	width: 100%;
 }
 
 .footer-top {
@@ -42,4 +41,18 @@
 .footer-name {
 	font-weight: bold;
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+	.footer-right {
+		display: none;
+	}
+	.footer-top {
+		justify-content: center;
+	}
+
+	.footer-left {
+		width: 90%;
+		text-align: center;
+	}
 }

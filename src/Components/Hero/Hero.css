@@ -17,11 +17,12 @@
 
 .hero-left,
 .hero-right {
-	padding: 1.5rem;
+	padding: 1rem;
 }
 
 .hero-left h1 {
 	font-size: 5rem;
+	padding: 0;
 }
 
 .hero-left h3 {
@@ -56,4 +57,34 @@
 .hero-img {
 	height: 500px;
 	width: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+	.hero-top {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		width: 100%;
+	}
+
+	.hero-img {
+		display: none;
+	}
+
+	.hero-left h1 {
+		font-size: 2.5rem;
+	}
+
+	.location {
+		font-size: 1rem;
+	}
+
+	.location-icon {
+		height: 1rem;
+	}
+
+	.hero-left h3 {
+		font-size: 1rem;
+	}
 }
