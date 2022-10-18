@@ -43,4 +43,12 @@
 	.about-right {
 		display: none;
 	}
+
+	.about-left {
+		width: 100%;
+	}
+
+	.about-left p {
+		font-size: 1.4rem;
+	}
 }
