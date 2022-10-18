@@ -27,7 +27,7 @@ export const projects = [
 		projectTitle: "Portfolio-2.0",
 		projectFeatured: false,
 		projectDesc:
-			"Remake of my portfolio. New design, using React, Typescript and EmailJS to create a working contact form with only React. I will be planning a 3.0 soon with more functionalities.",
+			"Remake of my portfolio. New design, using React, Typescript and EmailJS to create a working contact form with only React. Fully mobile and tablet responsive. I will be planning a 3.0 soon with more functionalities.",
 		projectTags: ["HTML", "CSS", "JS", "React", "Typescript","EmailJS"],
 		projectGithub: "https://github.com/AhmedAlbarghouti/Weather-app",
 		projectLive: "https://ahmed-weather-app.netlify.app/",
